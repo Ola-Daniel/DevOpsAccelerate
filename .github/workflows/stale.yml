@@ -21,13 +21,9 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        days-before-issue-stale: 1
-        days-before-issue-close: 2 
-        stale-issue-message: 'Stale issue message'
-        close-issue-message: ""
-        days-before-pr-stale: 1
-        days-before-pr-close: 2
-        stale-pr-message: 'Stale pull request message'
-        close-pr-message: ""
+        days-before-stale: 1
+        days-before-close: 2 
+        stale-issue-message: 'Stale'
+        close-issue-message: "Closed"
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
